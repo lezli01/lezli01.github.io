@@ -77747,7 +77747,7 @@ A.Qs.prototype={
 J(a){return A.apW(null,new A.rP(new A.aiI(this),null))},
 ZK(a){var s,r=null,q=t.w,p=Math.max(A.bw(a,B.cC,q).w.a.a/6,150),o=t.p,n=A.b([],o)
 if(A.bw(a,B.cC,q).w.a.a>=1200)n.push(B.Jg)
-n.push(A.m5(!1,r,!0,B.DZ,r,!0,r,r,r,r,r,r,r,r,r,new A.aiz(a),r,r,r,r))
+n.push(A.m5(!1,r,!0,B.DX,r,!0,r,r,r,r,r,r,r,r,r,new A.aiz(a),r,r,r,r))
 q=A.a0(a)
 q=A.e8(r,new A.bx(B.bk,A.dA("L\xe1szl\xf3 Szab\xf3",r,r,r,r,r,A.a0(a).p2.a,r,r),r),B.p,q.at,r,r,r,r,r,r,r,r,r)
 s=A.a0(a)
@@ -77792,7 +77792,7 @@ $2(a,b){var s=null,r=this.a,q=r.ZK(a),p=A.bw(a,B.cC,t.w).w.a.a>1000?r.ZR():r.ZL(
 return new A.e5(B.kC,s,s,new A.bx(B.bk,new A.dR(new A.ac(0,1200,0,b.d),A.avu(A.ht(A.b([q,B.it,p,B.it,r.a.c],t.p),B.Z,B.aa,B.ab),s,B.V,s,s,B.av),s),s),s)},
 $S:514}
 A.aiz.prototype={
-$0(){A.aEk(B.DX,B.DL,this.a)},
+$0(){A.aEk(B.DY,B.DL,this.a)},
 $S:0}
 A.aiC.prototype={
 $0(){var s=this.a,r=s.c
@@ -82668,10 +82668,10 @@ B.DU=new A.rC(0,"repeat")
 B.DV=new A.rC(1,"repeatX")
 B.DW=new A.rC(2,"repeatY")
 B.dJ=new A.rC(3,"noRepeat")
-B.yC=new A.i1("images/profile_pic.jpg")
-B.DX=new A.m0(B.yC,null,null,null)
-B.yD=new A.i1("images/profile_pic_thumbnail.jpg")
-B.DZ=new A.m0(B.yD,150,null,null)
+B.yC=new A.i1("assets/images/profile_pic_thumbnail.jpg")
+B.DX=new A.m0(B.yC,150,null,null)
+B.yD=new A.i1("assets/images/profile_pic.jpg")
+B.DY=new A.m0(B.yD,null,null,null)
 B.ax=A.b(s([]),t.oU)
 B.E_=new A.kl("\ufffc",null,null,!0,!0,B.ax)
 B.E1=new A.dn(0.0825,0.2075,B.M)
@@ -83909,8 +83909,8 @@ B.CJ=new A.dS(8,0,0,0)
 B.Je=new A.bx(B.CJ,null,null)
 B.yB=new A.i1("assets/images/banner.jpeg")
 B.za=new A.wl(3,"fitWidth")
-B.DY=new A.m0(B.yB,1200,B.za,null)
-B.Jg=new A.bx(B.bk,B.DY,null)
+B.DZ=new A.m0(B.yB,1200,B.za,null)
+B.Jg=new A.bx(B.bk,B.DZ,null)
 B.jn=new A.bx(B.ix,null,null)
 B.rL=new A.bx(B.lM,null,null)
 B.d4=new A.K_(0,"fill")
