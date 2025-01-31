@@ -1,0 +1,1 @@
+Real estate price estimator with the power of artificial intelligence.
