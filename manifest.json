@@ -1,11 +1,11 @@
 {
-    "name": "lezli01",
+    "name": "László Szabó Portfolio",
     "short_name": "lezli01",
-    "start_url": ".",
+    "start_url": "/",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#101010",
+    "theme_color": "#101010",
+    "description": "Software engineer portfolio of László Szabó (lezli01), featuring projects, experience, and contact details.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -3,39 +3,52 @@
 <head>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="1njbNkJPHV46MIT33uL35Q" async></script>
 
-    <base href="$FLUTTER_BASE_HREF">
+    <base href="/">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
 
-    <title>László Szabó \| Software Engineer Portfolio</title>
+    <title>László Szabó (lezli01) | Software Engineer & AI Solutions Portfolio</title>
     <meta name="description"
-          content="Portfolio of László Szabó, software engineer. Explore projects, experience, and contact information.">
+          content="Portfolio of László Szabó (lezli01), software engineer experienced in AI utilization, AI solution development, C++, Flutter, backend systems, and cloud-native architecture.">
+    <meta name="keywords"
+          content="László Szabó, lezli01, software engineer, AI engineer, AI utilization, AI development, machine learning, LLM integration, C++, Flutter, backend engineer, portfolio, cloud, microservices">
     <meta name="author" content="László Szabó">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+
     <link rel="canonical" href="https://lezli01.is-a.dev/">
+    <link rel="alternate" href="https://lezli01.is-a.dev/" hreflang="en">
+    <link rel="alternate" href="https://lezli01.is-a.dev/" hreflang="x-default">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="László Szabó \| Software Engineer Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="László Szabó (lezli01) | Software Engineer & AI Solutions Portfolio">
     <meta property="og:description"
-          content="Software engineer portfolio showcasing projects and experience.">
+          content="Explore projects and experience in software engineering, practical AI utilization, and AI solution development by László Szabó.">
     <meta property="og:url" content="https://lezli01.is-a.dev/">
-    <meta property="og:image" content="https://lezli01.is-a.dev/icons/Icon-192.png">
+    <meta property="og:image" content="https://lezli01.is-a.dev/icons/Icon-512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="László Szabó software engineer and AI solutions portfolio logo">
     <meta property="og:site_name" content="lezli01">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="László Szabó \| Software Engineer Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="László Szabó (lezli01) | Software Engineer & AI Solutions Portfolio">
     <meta name="twitter:description"
-          content="Portfolio highlighting projects and experience as a software engineer.">
-    <meta name="twitter:image" content="https://lezli01.is-a.dev/icons/Icon-192.png">
+          content="Software engineer portfolio featuring AI utilization, AI solution development, projects, and professional experience.">
+    <meta name="twitter:image" content="https://lezli01.is-a.dev/icons/Icon-512.png">
+    <meta name="twitter:image:alt" content="László Szabó software engineer and AI solutions portfolio logo">
 
     <!-- PWA / iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="lezli01">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#101010">
     <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
     <!-- Favicon -->
@@ -48,20 +61,81 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "László Szabó",
-            "url": "https://lezli01.is-a.dev/",
-            "jobTitle": "Software Engineer",
-            "description": "Software engineer portfolio showcasing projects and experience.",
-            "image": "https://lezli01.is-a.dev/icons/Icon-192.png",
-            "sameAs": [
-                "https://github.com/lezli01"
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "@id": "https://lezli01.is-a.dev/#website",
+                    "url": "https://lezli01.is-a.dev/",
+                    "name": "László Szabó Portfolio",
+                    "description": "Software engineer and AI solutions portfolio of László Szabó (lezli01).",
+                    "inLanguage": "en"
+                },
+                {
+                    "@type": "Person",
+                    "@id": "https://lezli01.is-a.dev/#person",
+                    "name": "László Szabó",
+                    "alternateName": "lezli01",
+                    "url": "https://lezli01.is-a.dev/",
+                    "jobTitle": "Software Engineer and AI Solutions Developer",
+                    "description": "Software engineer focused on C++, Flutter, backend services, scalable systems, practical AI utilization, and AI solution development.",
+                    "image": "https://lezli01.is-a.dev/icons/Icon-512.png",
+                    "sameAs": [
+                        "https://github.com/lezli01",
+                        "https://www.linkedin.com/in/lezli01",
+                        "https://www.facebook.com/lezli01"
+                    ]
+                },
+                {
+                    "@type": "CollectionPage",
+                    "@id": "https://lezli01.is-a.dev/projects#webpage",
+                    "url": "https://lezli01.is-a.dev/projects",
+                    "name": "Projects - László Szabó",
+                    "isPartOf": {
+                        "@id": "https://lezli01.is-a.dev/#website"
+                    },
+                    "about": {
+                        "@id": "https://lezli01.is-a.dev/#person"
+                    }
+                }
             ]
         }
     </script>
+
+    <script>
+        // Restore deep links redirected through 404.html (GitHub Pages SPA fallback).
+        (function () {
+            var query = window.location.search;
+            if (!query || query.indexOf('?p=/') !== 0) {
+                return;
+            }
+
+            var decoded = query
+                .substring(4)
+                .split('&q=');
+            var path = decoded[0].replace(/~and~/g, '&');
+            var search = decoded.length > 1 ? ('?' + decoded[1].replace(/~and~/g, '&')) : '';
+            var target = path + search + window.location.hash;
+            window.history.replaceState(null, '', target);
+        })();
+    </script>
 </head>
 <body>
-<noscript>This site requires JavaScript to run the Flutter app. Please enable JavaScript.</noscript>
-<script src="flutter_bootstrap.js?v=6" async></script>
+<noscript>
+    <main>
+        <h1>László Szabó (lezli01) - Software Engineer and AI Solutions Portfolio</h1>
+        <p>
+            This portfolio highlights software engineering projects, practical AI utilization, AI solution development,
+            work experience, and contact links. JavaScript is required for the interactive Flutter app.
+        </p>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/experience">Experience</a> |
+            <a href="/projects">Projects</a> |
+            <a href="/work">Work</a> |
+            <a href="/contact">Contact</a>
+        </nav>
+    </main>
+</noscript>
+<script src="flutter_bootstrap.js?v=7" async></script>
 </body>
 </html>

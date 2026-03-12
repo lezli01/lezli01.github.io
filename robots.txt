@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lezli01.is-a.dev/sitemap.xml
+

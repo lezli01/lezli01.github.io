@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // Redirect unknown paths back to index.html while preserving route/query.
+    (function () {
+      var location = window.location;
+      var normalizedPath = location.pathname.replace(/^\/+/, '/');
+      var encodedPath = normalizedPath.replace(/&/g, '~and~');
+      var encodedQuery = location.search ? '&q=' + location.search.slice(1).replace(/&/g, '~and~') : '';
+      var target = '/?p=/' + encodedPath.slice(1) + encodedQuery + location.hash;
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body></body>
+</html>
