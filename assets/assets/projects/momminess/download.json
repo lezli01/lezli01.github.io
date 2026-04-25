@@ -1,0 +1,16 @@
+{
+  "downloads": [
+    {
+      "platform": "android",
+      "url": "https://play.google.com/store/apps/details?id=com.momminess.app"
+    },
+    {
+      "platform": "ios",
+      "url": "https://apps.apple.com/us/app/momminess-pregnancy-baby/id6761522830"
+    },
+    {
+      "platform": "browser",
+      "url": "https://www.momminess.com"
+    }
+  ]
+}

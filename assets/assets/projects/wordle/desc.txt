@@ -1,1 +1,3 @@
-A Hungarian version of the popular word game with a variety of game modes and features. Guess the word by using real words to find out information about the answer.
+Szóvadász is a Hungarian word guessing game inspired by the popular daily puzzle format.
+
+Players use real Hungarian words to uncover clues about the hidden answer, with multiple game modes and extra features to keep the experience fresh.

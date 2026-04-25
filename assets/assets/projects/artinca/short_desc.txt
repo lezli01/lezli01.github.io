@@ -1,1 +1,1 @@
-Real estate price estimator with the power of artificial intelligence.
+AI-powered real estate price estimator backed by market trends and statistics.

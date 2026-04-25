@@ -1,1 +1,1 @@
-An application for recording Negative Automatic Thoughts and Logical Errors.
+Mental health companion for recording negative automatic thoughts and logical errors.

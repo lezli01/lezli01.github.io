@@ -1,0 +1,11 @@
+dart
+flutter
+android
+ios
+web
+firebase
+firestore
+firebaseAuth
+firebaseCloudMessaging
+firebaseHosting
+firebaseAppCheck
