@@ -57,6 +57,176 @@
     <!-- Manifest -->
     <link rel="manifest" href="manifest.json">
 
+    <style>
+        :root {
+            color-scheme: dark;
+            --loader-bg: #282828;
+            --loader-surface: rgba(40, 40, 40, 0.82);
+            --loader-border: rgba(232, 226, 214, 0.18);
+            --loader-text: #f3f0e9;
+            --loader-muted: #b9b2a6;
+            --loader-accent: #d7c7a1;
+            --loader-accent-strong: #f2e6c9;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: var(--loader-bg);
+        }
+
+        .app-loading {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            background:
+                    radial-gradient(circle at 18% 16%, rgba(242, 230, 201, 0.12), transparent 32rem),
+                    radial-gradient(circle at 80% 76%, rgba(215, 199, 161, 0.09), transparent 28rem),
+                    linear-gradient(135deg, #202020 0%, #282828 48%, #1c1c1c 100%);
+            color: var(--loader-text);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            transition: opacity 320ms ease, visibility 320ms ease;
+        }
+
+        .app-loading::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image:
+                    linear-gradient(rgba(232, 226, 214, 0.045) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(232, 226, 214, 0.045) 1px, transparent 1px);
+            background-size: 48px 48px;
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95), transparent 86%);
+        }
+
+        .app-loading.is-hidden {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loading-panel {
+            position: relative;
+            width: min(88vw, 420px);
+            padding: 34px 32px 30px;
+            border: 1px solid var(--loader-border);
+            border-radius: 8px;
+            background: var(--loader-surface);
+            box-shadow: 0 24px 90px rgba(0, 0, 0, 0.32);
+            backdrop-filter: blur(22px);
+        }
+
+        .loading-title {
+            margin: 0 0 20px;
+            font-size: 34px;
+            font-weight: 720;
+            line-height: 1;
+            letter-spacing: 0;
+            color: var(--loader-text);
+        }
+
+        .loading-title span {
+            color: var(--loader-accent);
+        }
+
+        .loading-status {
+            min-height: 22px;
+            margin: 0 0 24px;
+            color: var(--loader-muted);
+            font-size: 14px;
+            line-height: 1.55;
+        }
+
+        .loading-bar {
+            position: relative;
+            height: 6px;
+            overflow: hidden;
+            border-radius: 999px;
+            background: rgba(232, 226, 214, 0.13);
+        }
+
+        .loading-bar::after {
+            content: "";
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 42%;
+            border-radius: inherit;
+            background: linear-gradient(90deg, var(--loader-accent), var(--loader-accent-strong));
+            box-shadow: 0 0 24px rgba(215, 199, 161, 0.36);
+            animation: loading-progress 1.35s ease-in-out infinite;
+        }
+
+        .loading-footer {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 18px;
+            color: rgba(243, 240, 233, 0.72);
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+            font-size: 12px;
+        }
+
+        .loading-pulse {
+            width: 8px;
+            height: 8px;
+            flex: 0 0 auto;
+            border-radius: 50%;
+            background: var(--loader-accent);
+            box-shadow: 0 0 18px rgba(215, 199, 161, 0.62);
+            animation: loading-pulse 1.2s ease-in-out infinite;
+        }
+
+        @keyframes loading-progress {
+            0% {
+                transform: translateX(-115%);
+            }
+
+            55%, 100% {
+                transform: translateX(245%);
+            }
+        }
+
+        @keyframes loading-pulse {
+            0%, 100% {
+                opacity: 0.45;
+                transform: scale(0.86);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .loading-panel {
+                width: min(84vw, 360px);
+                padding: 28px 24px 26px;
+            }
+
+            .loading-title {
+                font-size: 30px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .loading-bar::after,
+            .loading-pulse {
+                animation-duration: 2.8s;
+            }
+        }
+    </style>
+    <noscript>
+        <style>
+            #app-loading {
+                display: none;
+            }
+        </style>
+    </noscript>
+
     <!-- Structured Data -->
     <script type="application/ld+json">
         {
@@ -120,6 +290,17 @@
     </script>
 </head>
 <body>
+<div class="app-loading" id="app-loading" role="status" aria-live="polite" aria-label="Loading lezli01 portfolio">
+    <section class="loading-panel">
+        <h1 class="loading-title">lezli<span>01</span></h1>
+        <p class="loading-status" id="loading-status">Warming up the runtime...</p>
+        <div class="loading-bar"></div>
+        <div class="loading-footer">
+            <span class="loading-pulse"></span>
+            <span>boot sequence active</span>
+        </div>
+    </section>
+</div>
 <noscript>
     <main>
         <h1>László Szabó (lezli01) - Software Engineer and AI Solutions Portfolio</h1>
@@ -136,6 +317,49 @@
         </nav>
     </main>
 </noscript>
+<script>
+    (function () {
+        var loader = document.getElementById('app-loading');
+        var status = document.getElementById('loading-status');
+        var messages = [
+            'Warming up the runtime...',
+            'Linking interface components...',
+            'Priming the rendering pipeline...',
+            'Negotiating clean architecture boundaries...',
+            'Hydrating project telemetry...',
+            'Preparing pixels for production...',
+            'Compiling ideas into interaction...',
+            'Tuning latency for first paint...'
+        ];
+        var messageIndex = 0;
+
+        var messageTimer = window.setInterval(function () {
+            messageIndex = (messageIndex + 1) % messages.length;
+            status.textContent = messages[messageIndex];
+        }, 1550);
+
+        function hideLoader() {
+            if (!loader) {
+                return;
+            }
+
+            window.clearInterval(messageTimer);
+            loader.classList.add('is-hidden');
+            window.setTimeout(function () {
+                loader.remove();
+            }, 360);
+        }
+
+        window.addEventListener('flutter-first-frame', hideLoader, {once: true});
+        window.addEventListener('load', function () {
+            window.setTimeout(function () {
+                if (loader && !loader.classList.contains('is-hidden')) {
+                    status.textContent = 'Finalizing application shell...';
+                }
+            }, 4200);
+        });
+    })();
+</script>
 <script src="flutter_bootstrap.js?v=7" async></script>
 </body>
 </html>
