@@ -1,0 +1,5 @@
+dart
+flutter
+cli
+staticAnalysis
+git

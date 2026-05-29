@@ -1,0 +1,14 @@
+milf (Markdown Interface & Live Formatter) is a cross-platform desktop Markdown editor for Windows, Linux and macOS, built with Tauri, React and Rust.
+
+The goal was a fast, native-feeling document tool that stays out of the way: open a file, see it rendered live, keep working across reboots without losing context.
+
+Core capabilities:
+* Live split-pane preview with three view modes: editor-only, preview-only, and side-by-side
+* Multi-file tabs with persistent session restore on the next launch
+* Light and dark themes that honour the OS preference automatically
+* OS file-association support so `.md` files open straight into milf
+* Single-instance routing — opening another file routes it into the running window instead of spawning a duplicate
+* Auto-save in the background so unsaved edits are never silently lost
+* Sanitized preview rendering via DOMPurify to keep untrusted Markdown content safe
+
+milf is in early development but already usable day-to-day, and the editing pipeline (CodeMirror on the front end, Rust on the back end through Tauri) keeps it responsive even on large documents.

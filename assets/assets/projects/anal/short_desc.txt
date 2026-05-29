@@ -1,0 +1,1 @@
+Pluggable static analysis framework for Dart and Flutter projects.

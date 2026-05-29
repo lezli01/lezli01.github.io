@@ -1,0 +1,14 @@
+anal is a pluggable static analysis framework and CLI for Dart and Flutter projects. It lets teams define and enforce project-specific analyzer rules without writing a full custom analyzer plugin.
+
+The goal is to make targeted code-quality checks cheap to add: drop in a rule, run the CLI, get findings. The framework handles parsing, traversal and reporting so authors can focus on the rule itself.
+
+Core capabilities:
+* Pluggable rule architecture for project-specific analysis
+* CLI-driven workflow that fits naturally into local dev and CI
+* Built-in `unused_function` rule out of the box
+* Lightweight integration with existing Dart and Flutter projects
+* Friendly path for authoring additional rules over time
+
+Installation is a single dev dependency: `flutter pub add --dev anal`. Once installed, analysis runs via `dart run anal`, surfacing findings directly in the terminal.
+
+anal is still pre-1.0.0 and under active development — APIs and rule surface may evolve as the framework matures.

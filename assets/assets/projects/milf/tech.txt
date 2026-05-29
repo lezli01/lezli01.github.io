@@ -1,0 +1,8 @@
+rust
+tauri
+react
+typeScript
+vite
+codeMirror
+markdown
+tailwind
