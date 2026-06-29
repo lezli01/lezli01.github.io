@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#101010",
     "theme_color": "#101010",
-    "description": "Software engineer portfolio of László Szabó (lezli01), featuring projects, experience, and contact details.",
+    "description": "Software engineer portfolio of László Szabó (lezli01), featuring projects, experience, contact details, and a link to his developer blog at blog.lezli01.is-a.dev.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
