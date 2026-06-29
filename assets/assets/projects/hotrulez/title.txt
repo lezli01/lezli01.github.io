@@ -1,0 +1,1 @@
+hotrulez - Firebase Security Rules for JetBrains IDEs

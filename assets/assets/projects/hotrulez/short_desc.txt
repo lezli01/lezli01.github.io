@@ -1,0 +1,1 @@
+First-class Firebase Security Rules language support for JetBrains IDEs.

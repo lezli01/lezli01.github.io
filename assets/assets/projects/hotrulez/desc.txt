@@ -1,0 +1,14 @@
+hotrulez is a JetBrains IDE plugin that elevates Firebase Security Rules (`.rules` files) to a first-class language, with dedicated support for Cloud Firestore and Cloud Storage rule files.
+
+Rather than treating rules as generic JavaScript, JSON or plain text, hotrulez understands their structure — surfacing syntax highlighting, formatting, diagnostics and symbol intelligence directly in the editor.
+
+Core capabilities:
+* Syntax highlighting across 24 semantic categories
+* Code formatting that preserves comments and multiline conditions
+* 18 structural diagnostic checks reporting errors and warnings
+* Symbol intelligence: go-to-definition, find usages, rename refactoring and code completion
+* Editor conveniences like brace matching, quote auto-closing and comment toggling
+
+The plugin performs purely structural analysis — it never evaluates authorization, connects to Firebase, or performs type inference.
+
+hotrulez is open source and built on the IntelliJ Platform, targeting the full family of JetBrains IDEs.
